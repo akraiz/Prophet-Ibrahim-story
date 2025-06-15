@@ -15,7 +15,6 @@ interface SplashScreenProps {
  * The main action button is now positioned below the content card.
  * The font for "أحمد كريز" is 'Almarai'.
  * Enhanced look and feel with updated gradients, typography, and styling.
- * The WhatsApp greeting button has been removed, as contact functionality is in the App footer.
  *
  * @param {SplashScreenProps} props - The properties for the SplashScreen component.
  * @param {() => void} props.onDismiss - Callback function to execute when the splash screen is dismissed.
@@ -29,7 +28,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onDismiss }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  // WhatsApp link and message for Eid greeting are removed.
+  // WhatsApp link and message are removed as the button is moved.
 
   return (
     <div
